@@ -107,7 +107,7 @@
       {% if pub.pdf %}
       <a title="view pdf"
         class="dib link ph2 pv1 w3 f6 bg-white hover-dark-red black-60 ba b--black-10 mb1"
-        href="{{ pub.pdf | relative_url }}" type="application/pdf">
+        href="{{ pub.pdf | absolute_url }}" type="application/pdf">
         <i class="fa fa-file-pdf-o fa-lg mr1"></i>pdf
       </a>
       {% endif %}
