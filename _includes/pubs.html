@@ -114,7 +114,7 @@
       {% if pub.bibtex %}
       <a title="view bibtex"
         class="dib link ph2 pv1 w3 f6 bg-white hover-dark-blue black-60 ba b--black-10 mb1"
-        href="{{ pub.bibtex | relative_url }}" type="application/x-bibtex">
+        href="{{ site.bibloc }}/{{ pub.bibtex }}" type="application/x-bibtex">
         <i class="fa fa-file-text-o fa-lg mr1"></i>bib
       </a>
       {% endif %}

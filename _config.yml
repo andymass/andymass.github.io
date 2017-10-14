@@ -1,6 +1,6 @@
 title:            "Andy Massimino"
 description:      "Andy Massimino's personal website"
-url:              https://andymass.github.io
+url:              'https://andymass.github.io'
 google_analytics: UA-64739852-1
 
 external:
@@ -13,6 +13,8 @@ external:
 # cvfile:
 
 repository: andymass/andymass.github.io
+
+bibloc: 'https://raw.githubusercontent.com/andymass/andymass.github.io/master'
 
 permalink:        /posts/:categories/:title/
 
