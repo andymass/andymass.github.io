@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% assign is_post = page.date %}
+<html lang="en">
+  <head>
+    {% if page.title %}
+      <meta content='{{ page.title }} - {{ site.title }}' name='title'>
+      <meta content='{{ page.title }} - {{ site.title }}' name='og:title'>
+      <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+      <meta content='{{ site.title }}' name='title'>
+      <meta content='{{ site.title }}' name='og:title'>
+      <title>{{ site.title }}</title>
+    {% endif %}
+    {% include head.html %}
+  </head>
+  <body class="lh-copy dark-gray pa0 f6 sans-serif bg-not-white">
+
+    <nav class="db dt-l w-100 border-box pa3 pa4-ns bb b--black-10">
+      <div class="db dtc-l v-mid w-100 w-40-l tc tl-l mb2 mb0-l">
+        <a class="link dim black b f6 f5-ns dib mr3" href="{{ site.baseurl }}/" title="home">
+          Andy Massimino
+        </a>
+        <a class="link dim gray f6 f5-ns dib mr3" href="{{ site.baseurl }}/contact" title="contact">
+          contact
+        </a>
+        <a class="link dim gray f6 f5-ns dib mr3" href="{{ site.baseurl }}/papers" title="papers">
+          papers
+        </a>
+        <a class="link dim gray f6 f5-ns dib mr3" href="{{ site.baseurl }}/code" title="code">
+          code
+        </a>
+        {% if site.cvurl %}
+        <a class="link dim gray f6 f5-ns dib mr3"
+           href="{{ site.cvurl }}" title="cv">
+          cv
+        </a>
+        {% endif %}
+      </div>
+      <div class="db dtc-l v-mid w-100 w-60-l tc tr-l">
+        <a class="link hover-purple gray f6 f5-ns dib mr2"
+           href="{{ site.external.github }}" title="github">
+          <i class="fa fa-github fa-lg"></i>
+        </a>
+        <a class="link hover-blue gray f6 f5-ns dib mr2"
+           href="{{ site.external.linkedin}}" title="linkedin">
+          <i class="fa fa-linkedin-square fa-lg"></i>
+        </a>
+        <a class="link hover-dark-blue gray f6 f5-ns dib mr2"
+           href="{{ site.external.scholar }}" title="retro">
+          <i class="ai ai-google-scholar fa-lg"></i>
+        </a>
+        <a class="link hover-green gray f6 f5-ns dib mr2"
+           href="{{ site.external.orcid }}" title="retro">
+          <i class="ai ai-orcid fa-lg"></i>
+        </a>
+        <a class="link hover-gold gray f6 f5-ns dib"
+           href="{{ site.external.arxiv }}" title="arxiv">
+          <i class="ai ai-arxiv fa-lg"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section class="mw7 center">
+      <article class="pv4 ph3 ph0-l">
+        {% if page.landing %}
+        <div class="flex flex-column flex-row-ns">
+          <div class="w-100 w-65-ns pr3-ns order-2 order-1-ns">
+            <h1 class="f1-ns f2 fw4 i ebgara ma0 lh-title">
+              about me
+            </h1>
+            <div class="f6 f5-l lh-copy tj markdown-body">
+              {{ content }}
+            </div>
+          </div>
+          <div class="center pt4-ns pl3-ns order-1 order-2-ns mb4 mb0-ns w-60 w-35-ns">
+            <img src="images/andy.png"
+                 class="ba b--black-10 br-100 w-auto h-auto" alt="andy">
+          </div>
+        </div>
+        {% else %}
+          <h1 class="f1-ns f2 fw4 i ebgara ma0 lh-title">
+            {{ page.title }}
+          </h1>
+          <div class="f6 f5-l lh-copy tj markdown-body">
+          {{ content }}
+          </div>
+        {% endif %}
+
+        <div class='mt4'></div>
+        {% if page.showpubs %}
+          {% include pubs.html %}
+        {% endif %}
+      </article>
+    </section>
+
+    <footer class="ph3 ph4-ns pv4 bt b--black-10">
+      <div class="">
+        <p class="f6 db b black-70 lh-solid">
+        © 2017 Andrew Massimino.  All rights reserved.
+        </p>
+        {% if page.fineprint %}
+        <p class="f7 db gray lh-solid tj">
+        This material is presented to ensure timely dissemination of scholarly and
+        technical work.  Copyright and all rights therein are retained by authors or
+        by other copyright holders.  All persons copying this information are
+        expected to adhere to the terms and conditions invoked by each authors'
+        copyright.  In most cases, these works may not be reposted without the
+        explicit permission of the copyright holder.
+        </p>
+        {% endif %}
+      </div>
+    </footer>
+
+    <script>
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$", right: "$", display: false},
+          {left: "\\[", right: "\\]", display: true}
+        ]
+      });
+    </script>
+  </body>
+</html>
+

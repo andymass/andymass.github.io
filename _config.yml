@@ -1,0 +1,31 @@
+title:            "Andy Massimino"
+description:      "Andy Massimino's personal website"
+url:              https://andymass.github.io
+baseurl:          /
+google_analytics: UA-64739852-1
+
+external:
+  github: https://github.com/andymass/
+  scholar: https://scholar.google.com/citations?user=7_MQJy4AAAAJ
+  arxiv: https://arxiv.org/find/cs/1/au:+Massimino_A/0/1/0/all/0/1
+  linkedin: https://www.linkedin.com/in/amassive
+  orcid: https://orcid.org/0000-0002-0484-875X
+
+# cvfile:
+
+repository: andymass/andymass.github.io
+
+permalink:        /posts/:categories/:title/
+
+defaults:
+  - values:
+      layout: "default"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: nil
+
+highlighter: rouge
+

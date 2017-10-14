@@ -1,0 +1,210 @@
+[
+	{
+		"id": "http://zotero.org/users/1998167/items/F9T37NPA",
+		"type": "paper-conference",
+		"title": "The geometry of random paired comparisons",
+		"container-title": "Proc. IEEE Int. Conf Acoust Speech Signal Process (ICASSP)",
+		"publisher-place": "New Orleans, LA",
+		"event-place": "New Orleans, LA",
+		"abstract": "Suppose that we are able to obtain binary paired comparisons of the form \"$x$ is closer to $p$ than to q\" for various choices of vectors p and q. Such observations arise in a variety of contexts, including nonmetric multidimensional scaling, unfolding, and ranking problems, often because they provide a powerful and flexible model of preference. In this paper we give a theoretical bound for how well we can expect to estimate x under a randomized model for p and q. We also show that we can achieve significant gains by adaptively changing the distribution for choosing p and q.",
+		"author": [
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					3
+				]
+			]
+		},
+        "pdf": "pdf/md-icassp-2017.pdf",
+        "bibtex": "pdf/md-icassp-2017.bib"
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/PX524A6W",
+		"type": "article-journal",
+		"title": "Constrained Adaptive Sensing",
+		"container-title": "IEEE Transactions on Signal Processing",
+		"page": "5437-5449",
+		"volume": "64",
+		"issue": "20",
+		"abstract": "Suppose that we wish to estimate a vector $\\mathbf{x} \\in \\mathbb{C}^n$ from a small number of noisy linear measurements of the form $\\mathbf{y} = \\mathbf{A x} + \\mathbf{z}$, where $\\mathbf{z}$ represents measurement noise. When the vector $\\mathbf{x}$ is sparse, meaning that it has only $s$ nonzeros with $s \\ll n$, one can obtain a significantly more accurate estimate of $\\mathbf{x}$ by adaptively selecting the rows of $\\mathbf{A}$ based on the previous measurements provided that the signal-to-noise ratio (SNR) is sufficiently large. In this paper we consider the case where we wish to realize the potential of adaptivity but where the rows of $\\mathbf{A}$ are subject to physical constraints. In particular, we examine the case where the rows of $\\mathbf{A}$ are constrained to belong to a finite set of allowable measurement vectors. We demonstrate both the limitations and advantages of adaptive sensing in this constrained setting. We prove that for certain measurement ensembles, the benefits offered by adaptive designs fall far short of the improvements that are possible in the unconstrained adaptive setting. On the other hand, we also provide both theoretical and empirical evidence that in some scenarios adaptivity does still result in substantial improvements even in the constrained setting. To illustrate these potential gains, we propose practical algorithms for constrained adaptive sensing by exploiting connections to the theory of optimal experimental design and show that these algorithms exhibit promising performance in some representative applications.",
+		"URL": "http://ieeexplore.ieee.org/document/7529093/",
+		"DOI": "10.1109/TSP.2016.2597130",
+		"ISSN": "1053-587X, 1941-0476",
+		"note": "arXiv:1506.05889",
+		"author": [
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			},
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Needell",
+				"given": "Deanna"
+			},
+			{
+				"family": "Woolf",
+				"given": "Tina"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					10,
+					15
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					2,
+					15
+				]
+			]
+		},
+        "pdf": "https://arxiv.org/pdf/1506.05889.pdf",
+        "bibtex": "pdf/dmnw-tsp-2016.bib"
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/X58JR2FP",
+		"type": "paper-conference",
+		"title": "Binary stable embedding via paired comparisons",
+		"container-title": "Proc. IEEE Work. on Statistical Signal Processing (SSP)",
+		"publisher-place": "Palma de Mallorca, Spain",
+		"event-place": "Palma de Mallorca, Spain",
+		"abstract": "Suppose that we wish to estimate a vector $\\mathbf{x}$ from a set of binary paired comparisons of the form “$\\mathbf{x}$ is closer to $\\mathbf{p}$ than to $\\mathbf{q}$” for various choices of vectors $\\mathbf{p}$ and $\\mathbf{q}$. The problem of estimating $\\mathbf{x}$ from this type of observation arises in a variety of contexts, including nonmetric multidimensional scaling, “unfolding,” and ranking problems, often because it provides a powerful and flexible model of preference. The main contribution of this paper is to show that under a randomized model for $\\mathbf{p}$ and $\\mathbf{q}$, a suitable number of binary paired comparisons yield a stable embedding of the space of target vectors.",
+		"author": [
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					6
+				]
+			]
+		},
+        "pdf": "pdf/mm-ssp-2016.pdf",
+        "bibtex": "pdf/mm-ssp-2016.bib"
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/ISGVW3EC",
+		"type": "paper-conference",
+		"title": "Randomized multi-pulse time-of-flight mass spectrometry",
+		"container-title": "Proc. IEEE Int. Work. on Computational Advances in Multi-Sensor Adaptive Process. (CAMSAP)",
+		"publisher-place": "Cancun, Mexico",
+		"event-place": "Cancun, Mexico",
+		"abstract": "Mass spectrometry is one of the primary methods for chemical analysis and serves as a fundamental tool in numerous scientific disciplines. In this paper we consider the design of time-of-flight mass spectrometers, which produce a stream of measurements which can be modeled by a convolution between the mass spectrum of interest and a specified pulsing pattern. Our goal is to reduce the total time necessary to analyze a sample to a given precision (or equivalently, given a fixed amount of time, to obtain a more precise estimate of the sample). We can do this by leveraging the structure that exists in typical mass spectra. In particular, since any given substance is usually composed of a relatively small number of distinct molecules, mass spectra tend to be relatively sparse. In this paper we perform an analysis of an idealized model of a time-of-flight mass spectrometer which uses a randomized pulsing pattern. Such an architecture has the potential to enable a new tradeoff between acquisition time and precision/dynamic range. We show that under certain natural conditions on the randomized scheme—namely, that the system does not pulse too often—this construction will lead to a system which satisfies certain desirable properties that are sufficient to ensure that sparse recovery is possible. In particular, we show that with high probability, the system will satisfy the conditions of a bipartite expander graph provided the pulsing rate is not too large. We then conclude with a range of simulations that support our theoretical analysis and demonstrate the practical viability of this approach.",
+		"author": [
+			{
+				"family": "Moore",
+				"given": "Michael G."
+			},
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					12
+				]
+			]
+		},
+        "pdf": "pdf/mmd-camsap-2015.pdf",
+        "bibtex": "pdf/mmd-camsap-2015.bib"
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/IVDGGIGD",
+		"type": "paper-conference",
+		"title": "Constrained adaptive sensing [conference version]",
+		"container-title": "Proc. Work. on Signal Processing with Adaptive Sparse Structured Representations (SPARS)",
+		"publisher-place": "Cambridge, United Kingdom",
+		"event-place": "Cambridge, United Kingdom",
+		"author": [
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			},
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Needell",
+				"given": "D."
+			},
+			{
+				"family": "Woolf",
+				"given": "T."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					7
+				]
+			]
+		},
+        "pdf": "pdf/dmnw-spars-2015.pdf",
+        "bibtex": "pdf/dmnw-spars-2015.bib"
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/X2ZJ97JV",
+		"type": "paper-conference",
+		"title": "One-bit matrix completion for pairwise comparison matrices",
+		"container-title": "Proc. Work. on Signal Processing with Adaptive Sparse Structured Representations (SPARS)",
+		"publisher-place": "Lausanne, Switzerland",
+		"event-place": "Lausanne, Switzerland",
+		"abstract": "In this paper we consider the related problems of ranking and of recovering a matrix of pairwise comparisons from binary observations. We describe a naïve adaptation of the one-bit matrix completion framework, but then note that additional constraints that arise in the context of ranking allows us to replace nuclear norm minimization with a more direct approach. This ultimately leads to a novel viewpoint on a classic approach to the ranking problem.Both theoretical and experimental results show that this simplified approach to recovering a pairwise comparison matrix performs significantly better than the naïve approach.",
+		"author": [
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					7
+				]
+			]
+		},
+        "pdf": "pdf/mm-spars-2013.pdf",
+        "bibtex": "pdf/mm-spars-2013.bib"
+	}
+]

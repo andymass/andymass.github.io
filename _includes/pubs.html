@@ -1,0 +1,132 @@
+<style>
+.drawer .drawer-contents {
+  max-height: 11rem;
+  transition: max-height 0.2s ease-in;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.drawer.closed .drawer-contents {
+  max-height: 0;
+}
+.drawer .drawericon {
+  transform: rotate(90deg);
+  transition: transform 0.1s ease-in;
+}
+.drawer.closed .drawericon {
+  transform: rotate(0);
+}
+</style>
+<noscript>
+  <style>
+    .drawer.closed .drawer-contents {
+      max-height: 200px;
+    }
+  </style>
+</noscript>
+
+{% capture amper %}<span class="amper">&amp;</span>{% endcapture %}
+
+{% for pub in site.data.pubs %}
+<article class="w-100 {% unless forloop.last %}bb{% endunless %} b--black-05" href="{{ forloop.index }}">
+  <div class="dt w-100">
+    <div class="dtc f6 f3-m f2-l w2 w3-l pt1 pb1 tc {% if pub.abstract %}dim pointer{% endif %}"
+         onclick="toggleClass('_abs{{ forloop.index }}', 'closed');">
+      {% if pub.type == 'article' %}
+      <i title="Article"
+         class="fa fa-book fa-lg light-blue b--black-10 db br2"></i>
+      {% elsif pub.type == 'article-journal' %}
+      <i title='Journal paper'
+         class="fa fa-book fa-lg light-blue b--black-10 db br2"></i>
+      {% elsif pub.type == 'paper-conference' %}
+      <i title='Conference paper'
+         class="fa fa-users fa-lg light-red b--black-10 db br2"></i>
+      {% endif %}
+    </div>
+    <div class="dtc v-mid pl3-ns w-80">
+      <h1 class="f6 f5-ns fw6 lh-title black mv1">{{ pub.title }}
+        {% if pub.URL %}
+        <a class='link blue dim mv0 ml2' href="{{ pub.URL }}">
+          <i class="fa fa-external-link"></i>
+        </a>
+        {% endif %}
+      </h1>
+      <h2 class="f6 fw4 mt0 mb0 black-60">
+        {% if pub.author %}
+        {%- for a in pub.author -%}
+          {%- unless forloop.first -%}
+            {%- if forloop.length == 2 -%}
+            &nbsp;{{ amper }}
+            {%- elsif forloop.last -%}, {{ amper }}
+            {%- else -%},
+            {%- endif -%}
+          {%- endunless -%}
+          {%- capture authkey -%}
+              {{ a.given }}.{{ a.family }}
+          {%- endcapture -%}
+          {% assign authkey = authkey | slugify %}
+          {%- if site.data.authors[authkey] %}
+            <a class="link blue dim" href="{{ site.data.authors[authkey] }}">{{ a.given }} {{ a.family }}</a>
+          {%- else %}
+              {{ a.given }} {{ a.family }}
+          {%- endif -%}
+        {%- endfor -%}
+        {% endif %}
+      </h2>
+      <h2 class="f6 fw4 mt0 mb0 black-60">
+        {{ pub.container-title }}
+        {%- if pub.event-place -%}
+          . {{ pub.event-place }}
+        {% endif %}
+      </h2>
+      {%- if pub.abstract -%}
+      <div class='center drawer closed mv1'
+              id='_abs{{ forloop.index }}'>
+        <h2 class='pointer dim f6 mv0 pl1 black-60'
+               onclick='toggleClass("_abs{{ forloop.index }}", "closed");'>
+          <i class='fa fa-angle-double-right drawericon'></i>
+          abstract
+        </h2>
+        <div class='drawer-contents f6 tj'>
+          {{ pub.abstract }} 
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+    <div class="dtc v-top tr">
+      <div class="w-100 mb1">
+        {% assign m = pub.issued.date-parts[0][1] %}
+        {% if m == 1 %}Jan.{% elsif m == 2 %}Feb.
+        {% elsif m == 3 %}Mar.{% elsif m == 4 %}Apr.
+        {% elsif m == 5 %}May.{% elsif m == 6 %}Jun.
+        {% elsif m == 7 %}Jul.{% elsif m == 8 %}Aug.
+        {% elsif m == 9 %}Sep.{% elsif m == 10 %}Oct.
+        {% elsif m == 11 %}Nov.{% elsif m == 12 %}Dec.
+        {% endif %}
+        {{ pub.issued.date-parts[0][0] }}
+      </div>
+      {% if pub.pdf %}
+      <a title="view pdf"
+        class="dib link ph2 pv1 w3 f6 bg-white hover-dark-red black-60 ba b--black-10 mb1"
+        href="{{ pub.pdf }}" type="application/pdf">
+        <i class="fa fa-file-pdf-o fa-lg mr1"></i>pdf
+      </a>
+      {% endif %}
+      {% if pub.bibtex %}
+      <a title="view bibtex"
+        class="dib link ph2 pv1 w3 f6 bg-white hover-dark-blue black-60 ba b--black-10 mb1"
+        href="{{ pub.bibtex }}" type="application/x-bibtex">
+        <i class="fa fa-file-text-o fa-lg mr1"></i>bib
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</article>
+{% endfor %}
+
+<script>
+function toggleClass(id, cl) {
+  document.getElementById(id).classList.toggle(cl);
+  return true;
+}
+</script>
+
