@@ -33,6 +33,12 @@ Hello _world_ __world!__
 
 # Some big header
 
+# Tech
+
+site url: `{{ site.url }}`
+
+site baseurl: `{{ site.baseurl }}`
+
 ## Code
 {% highlight ruby %}
 def print_hi(name)
