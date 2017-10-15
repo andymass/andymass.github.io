@@ -2,6 +2,8 @@
 title: colophon
 ---
 
+{% include inc.html %}
+
 ## License
 
 Content is © 2017 Andrew Massimino.  All rights reserved.
@@ -52,8 +54,6 @@ copyright holder.
 Jackdaws love my big sphinx of quartz.</span>
 
 ## Theme
-
-{% capture amper %}<span class="amper">&amp;</span>{% endcapture %}
 
 <span class="amper">Some testing &amp; text</span>
 

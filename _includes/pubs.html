@@ -24,7 +24,7 @@
   </style>
 </noscript>
 
-{% capture amper %}<span class="amper">&amp;</span>{% endcapture %}
+{% include inc.html %}
 
 {% for pub in site.data.pubs %}
 <article class="w-100 {% unless forloop.last %}bb{% endunless %} b--black-05" href="{{ forloop.index }}">

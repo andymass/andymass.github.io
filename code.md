@@ -10,7 +10,11 @@ setting. For  further  details,  see   the  paper  "[Constrained  adaptive
 sensing][1],"   by  M. A. Davenport,   A. K. Massimino,  D. Needell,   and
 T. Woolf.
 
-The code can  be downloaded [here][2]; see the included  readme file for a
+```
+{% include dmnw-tsp-2016.bib -%}
+```
+
+The code can  be downloaded [here][2]; see the included readme file for a
 detailed description of the contents and for usage instructions.
 
 ## More...
