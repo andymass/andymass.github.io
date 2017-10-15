@@ -39,6 +39,8 @@ site url: `{{ site.url }}`
 
 site baseurl: `{{ site.baseurl }}`
 
+page url: `{{ page.url }}`
+
 ## Code
 {% highlight ruby %}
 def print_hi(name)

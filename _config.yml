@@ -1,7 +1,8 @@
 title:            'Andy Massimino'
 description:      'Andy Massimino''s personal website'
 # url:              'https://andymass.github.io'
-# baseurl:        ''
+baseurl:
+canonical_url:    'https://normed.space'
 google_analytics: UA-64739852-1
 
 external:

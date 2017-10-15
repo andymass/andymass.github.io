@@ -2,7 +2,7 @@
 pages:
   script:
   - bundle install
-  - bundle exec jekyll build -d public
+  - bundle exec jekyll build -d public --config _config.yml,_config_gitlab.yml
   artifacts:
     paths:
     - public
