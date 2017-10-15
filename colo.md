@@ -33,7 +33,7 @@ Hello _world_ __world!__
 
 # Some big header
 
-# Tech
+## Tech
 
 site url: `{{ site.url }}`
 
@@ -66,5 +66,8 @@ Jackdaws love my big sphinx of quartz.</span>
 <span class="amper">Some testing &amp; text</span>
 
 [Jekyll](http://jekyllrb.com/) {{ amper }} [Tachyons](http://tachyons.io/)
-{{ amper }} Hosted on [GitHub](https://github.com/andymass/andymass.github.io).
+{{ amper }} 
+
+Site hosted on GitLab, code hosted
+on [GitHub](https://github.com/andymass/andymass.github.io).
 

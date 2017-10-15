@@ -38,3 +38,11 @@
 
 <link rel="canonical" href="{{ site.canonical_url }}{{ page.url }}">
 
+{% if site.url == site.canonical_url %}
+<script>
+  if (('{{ site.canonical_url | remove: "https://"}}' == window.location.host) && (window.location.protocol != 'https:')) {
+    window.location = window.location.toString().replace(/^http:/, "https:");
+  }
+</script>
+{% endif %}
+
