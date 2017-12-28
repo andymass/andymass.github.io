@@ -6,7 +6,7 @@ title: colophon
 
 ## License
 
-Content is © 2017 Andrew Massimino.  All rights reserved.
+Content is © {{ site.copyyear }} Andrew Massimino.  All rights reserved.
 
 ## Copyright notice for papers
 
@@ -40,6 +40,8 @@ site url: `{{ site.url }}`
 site baseurl: `{{ site.baseurl }}`
 
 page url: `{{ page.url }}`
+
+Compiled @ {{ 'now' | date: "%Y-%m-%d %H:%M" }}
 
 ## Code
 {% highlight ruby %}

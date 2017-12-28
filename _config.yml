@@ -14,6 +14,11 @@ external:
 
 # cvfile:
 
+copyyear: '2017&#x2012;2018'
+
+plugins:
+  - jekyll-redirect-from
+
 repository: 'andymass/andymass.github.io'
 
 bibloc: 'https://raw.githubusercontent.com/andymass/andymass.github.io/master'
