@@ -1,15 +1,18 @@
 image: ruby:2.4
 
 cache:
+  untracked: true
+  key: "$CI_BUILD_REF_NAME"
   paths:
-    - vendor/
+  - vendor/bundle/ruby
 
 before_script:
-  - bundle install --path vendor
+  - bundle install -j $(nproc) --path vendor/bundle
 
 pages:
   script:
-  - bundle exec jekyll build -d public --config _config.yml,_config_gitlab.yml
+  - "echo 'commit-sha: $CI_COMMIT_SHA' > _commit_sha.yml"
+  - bundle exec jekyll build -d public --config _config.yml,_config_gitlab.yml,_commit_sha.yml
   artifacts:
     paths:
     - public

@@ -43,6 +43,8 @@ page url: `{{ page.url }}`
 
 Compiled @ {{ 'now' | date: "%Y-%m-%d %H:%M" }}
 
+Commit SHA: {{ site.commit-sha }}
+
 ## Code
 {% highlight ruby %}
 def print_hi(name)
