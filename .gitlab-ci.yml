@@ -11,7 +11,7 @@ before_script:
 
 pages:
   script:
-  - "echo 'commit-sha: $CI_COMMIT_SHA' > _commit_sha.yml"
+  - 'echo "commit-sha: $CI_COMMIT_SHA" > _commit_sha.yml'
   - bundle exec jekyll build -d public --config _config.yml,_config_gitlab.yml,_commit_sha.yml
   artifacts:
     paths:
