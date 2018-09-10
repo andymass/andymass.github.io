@@ -29,10 +29,18 @@
         <a class="link dim gray f6 f5-ns dib mr3" href="{{ site.baseurl }}/code" title="code">
           code
         </a>
+        {% if site.cvurl or site.posts.size > 0 %}
+          <div class="di b--silver bl pa0 ml0 mr3"></div>
+        {% endif %}
         {% if site.cvurl %}
         <a class="link dim gray f6 f5-ns dib mr3"
            href="{{ site.cvurl }}" title="cv">
           cv
+        </a>
+        {% endif %}
+        {% if site.posts.size > 0 %}
+        <a class="link dim gray f6 f5-ns dib mr3" href="{{ site.baseurl }}/posts" title="posts">
+          blog
         </a>
         {% endif %}
       </div>

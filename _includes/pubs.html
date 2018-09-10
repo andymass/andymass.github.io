@@ -39,7 +39,10 @@
          class="fa fa-book fa-lg light-blue b--black-10 db br2"></i>
       {% elsif pub.type == 'paper-conference' %}
       <i title='Conference paper'
-         class="fa fa-users fa-lg light-red b--black-10 db br2"></i>
+         class="fa fa-users fa light-green b--black-10 db br2"></i>
+      {% elsif pub.type == 'thesis' %}
+      <i title='Thesis'
+         class="fa fa-graduation-cap fa-lg gold b--black-10 db br2"></i>
       {% endif %}
     </div>
     <div class="dtc v-mid pl3-ns w-80">
@@ -49,6 +52,17 @@
           <i class="fa fa-external-link"></i>
         </a>
         {% endif %}
+        <div class="pl1 dib f6 i gray fw4">
+          {% if pub.type == 'article' %}
+            article
+          {% elsif pub.type == 'article-journal' %}
+            journal
+          {% elsif pub.type == 'paper-conference' %}
+            conference
+          {% elsif pub.type == 'thesis' %}
+            thesis
+          {% endif %}
+        </div>
       </h1>
       <h2 class="f6 fw4 mt0 mb0 black-60">
         {% if pub.author %}
@@ -73,9 +87,17 @@
         {% endif %}
       </h2>
       <h2 class="f6 fw4 mt0 mb0 black-60">
-        {{ pub.container-title }}
+        {%- if pub.container-title -%}
+          {{ pub.container-title }}.
+        {% endif %}
+        {%- if pub.publisher -%}
+          {{ pub.publisher }}.
+        {% endif %}
         {%- if pub.event-place -%}
-          . {{ pub.event-place }}
+          {{ pub.event-place }}.
+        {% endif %}
+        {%- if pub.note -%}
+          ({{ pub.note }})
         {% endif %}
       </h2>
       {%- if pub.abstract -%}

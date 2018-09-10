@@ -1,5 +1,61 @@
 [
 	{
+		"id": "http://zotero.org/users/1998167/items/SKICY7FP",
+		"type": "thesis",
+		"title": "Learning to adapt under practical sensing constraints",
+		"publisher": "Georgia Institute of Technology",
+		"publisher-place": "Atlanta, GA",
+		"genre": "PhD thesis",
+		"event-place": "Atlanta, GA",
+		"abstract": "The objective of this research is to combine theory in signal processing\nand machine learning to develop techniques for adaptive signal acquisition\nwhich can cope with practical measurement constraints.  By leveraging\nstructured data models such as sparsity, intelligent sampling schemes can\nenable higher quality estimation with less labeled data in diverse\napplications such as imaging, recommendation systems, information retrieval,\nand psychometric studies.",
+		"note": "in preparation",
+		"author": [
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/1998167/items/KJ98M4P8",
+		"type": "article-journal",
+		"title": "As you like it: Localization via paired comparisons",
+		"container-title": "arXiv:1802.10489 [cs, stat]",
+		"source": "arXiv.org",
+		"abstract": "Suppose that we wish to estimate a vector $\\mathbf{x}$ from a set of binary paired comparisons of the form \"$\\mathbf{x}$ is closer to $\\mathbf{p}$ than to $\\mathbf{q}$\" for various choices of vectors $\\mathbf{p}$ and $\\mathbf{q}$. The problem of estimating $\\mathbf{x}$ from this type of observation arises in a variety of contexts, including nonmetric multidimensional scaling, \"unfolding,\" and ranking problems, often because it provides a powerful and flexible model of preference. We describe theoretical bounds for how well we can expect to estimate $\\mathbf{x}$ under a randomized model for $\\mathbf{p}$ and $\\mathbf{q}$. We also present results for the case where the comparisons are noisy and subject to some degree of error. Additionally, we show that under a randomized model for $\\mathbf{p}$ and $\\mathbf{q}$, a suitable number of binary paired comparisons yield a stable embedding of the space of target vectors. Finally, we also that we can achieve significant gains by adaptively changing the distribution for choosing $\\mathbf{p}$ and $\\mathbf{q}$.",
+		"URL": "http://arxiv.org/abs/1802.10489",
+		"note": "submitted",
+		"shortTitle": "As you like it",
+		"author": [
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					2
+				]
+			]
+		},
+		"pdf": "pdf/md-arxiv-2018.pdf",
+		"bibtex": "pdf/md-arxiv-2018.bib"
+	},
+	{
 		"id": "http://zotero.org/users/1998167/items/F9T37NPA",
 		"type": "paper-conference",
 		"title": "The geometry of random paired comparisons",
@@ -25,8 +81,8 @@
 				]
 			]
 		},
-        "pdf": "pdf/md-icassp-2017.pdf",
-        "bibtex": "pdf/md-icassp-2017.bib"
+		"pdf": "pdf/md-icassp-2017.pdf",
+		"bibtex": "pdf/md-icassp-2017.bib"
 	},
 	{
 		"id": "http://zotero.org/users/1998167/items/PX524A6W",
@@ -40,7 +96,7 @@
 		"URL": "http://ieeexplore.ieee.org/document/7529093/",
 		"DOI": "10.1109/TSP.2016.2597130",
 		"ISSN": "1053-587X, 1941-0476",
-		"note": "arXiv:1506.05889",
+		"note": "prepr. arXiv:1506.05889",
 		"author": [
 			{
 				"family": "Davenport",
@@ -77,8 +133,8 @@
 				]
 			]
 		},
-        "pdf": "https://arxiv.org/pdf/1506.05889.pdf",
-        "bibtex": "pdf/dmnw-tsp-2016.bib"
+		"pdf": "https://arxiv.org/pdf/1506.05889.pdf",
+		"bibtex": "pdf/dmnw-tsp-2016.bib"
 	},
 	{
 		"id": "http://zotero.org/users/1998167/items/X58JR2FP",
@@ -106,8 +162,8 @@
 				]
 			]
 		},
-        "pdf": "pdf/mm-ssp-2016.pdf",
-        "bibtex": "pdf/mm-ssp-2016.bib"
+		"pdf": "pdf/mm-ssp-2016.pdf",
+		"bibtex": "pdf/mm-ssp-2016.bib"
 	},
 	{
 		"id": "http://zotero.org/users/1998167/items/ISGVW3EC",
@@ -139,8 +195,8 @@
 				]
 			]
 		},
-        "pdf": "pdf/mmd-camsap-2015.pdf",
-        "bibtex": "pdf/mmd-camsap-2015.bib"
+		"pdf": "pdf/mmd-camsap-2015.pdf",
+		"bibtex": "pdf/mmd-camsap-2015.bib"
 	},
 	{
 		"id": "http://zotero.org/users/1998167/items/IVDGGIGD",
@@ -175,8 +231,8 @@
 				]
 			]
 		},
-        "pdf": "pdf/dmnw-spars-2015.pdf",
-        "bibtex": "pdf/dmnw-spars-2015.bib"
+		"pdf": "pdf/dmnw-spars-2015.pdf",
+		"bibtex": "pdf/dmnw-spars-2015.bib"
 	},
 	{
 		"id": "http://zotero.org/users/1998167/items/X2ZJ97JV",
@@ -204,7 +260,7 @@
 				]
 			]
 		},
-        "pdf": "pdf/mm-spars-2013.pdf",
-        "bibtex": "pdf/mm-spars-2013.bib"
+		"pdf": "pdf/mm-spars-2013.pdf",
+		"bibtex": "pdf/mm-spars-2013.bib"
 	}
 ]
