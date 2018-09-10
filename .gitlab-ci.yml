@@ -6,6 +6,11 @@ cache:
   paths:
   - vendor/bundle/ruby
 
+variables:
+  LC_ALL: "C.UTF-8"
+  LANG: "en_US.UTF-8"
+  LANGUAGE: "en_US.UTF-8"
+
 before_script:
   - bundle install -j $(nproc) --path vendor/bundle
 
