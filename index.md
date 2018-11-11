@@ -2,7 +2,7 @@
 landing: true
 ---
 
-I am a Ph.D. candidate in the [School of Electrical and Computer
+I received my Ph.D. from the [School of Electrical and Computer
 Engineering][1] at the [Georgia Institute of Technology][2] advised by
 [Mark Davenport][3].
 
