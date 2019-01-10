@@ -7,8 +7,7 @@
 		"publisher-place": "Atlanta, GA",
 		"genre": "PhD thesis",
 		"event-place": "Atlanta, GA",
-		"abstract": "The objective of this research is to combine theory in signal processing\nand machine learning to develop techniques for adaptive signal acquisition\nwhich can cope with practical measurement constraints.  By leveraging\nstructured data models such as sparsity, intelligent sampling schemes can\nenable higher quality estimation with less labeled data in diverse\napplications such as imaging, recommendation systems, information retrieval,\nand psychometric studies.",
-		"note": "in preparation",
+		"abstract": "The purpose of this work is to explore the capability of sensing systems to acquire information adaptively when they are subject to practical measurement constraints.  By leveraging problem structure such as sparsity and probabilistic data models, intelligent sampling schemes have the potential to enable higher quality estimation with less sensing effort in diverse applications such as imaging, recommendation systems, information retrieval, and psychometric studies.  Existing approaches to adaptive sensing are often limited in practice as they require the ability to take arbitrary measurements while in realistic situations, measurements must taken according to various limitations.  Two representative constrained scenarios are considered: linear settings in which measurement rows are chosen from a fixed collection and where estimation may be performed only via sequentially chosen paired comparisons.  Theoretical and empirical evidence are provided to suggest that adaptivity can result in substantial improvements in these constrained settings.",
 		"author": [
 			{
 				"family": "Massimino",
@@ -19,7 +18,7 @@
 			"date-parts": [
 				[
 					"2018",
-					10
+					11
 				]
 			]
 		}
