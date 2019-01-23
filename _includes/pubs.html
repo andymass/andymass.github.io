@@ -56,7 +56,11 @@
           {% if pub.type == 'article' %}
             article
           {% elsif pub.type == 'article-journal' %}
-            journal
+            {% if pub.is-preprint %}
+              preprint
+            {% else %}
+              journal
+            {% endif %}
           {% elsif pub.type == 'paper-conference' %}
             conference
           {% elsif pub.type == 'thesis' %}

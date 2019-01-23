@@ -26,6 +26,7 @@
 	{
 		"id": "http://zotero.org/users/1998167/items/KJ98M4P8",
 		"type": "article-journal",
+		"is-preprint": true,
 		"title": "As you like it: Localization via paired comparisons",
 		"container-title": "arXiv:1802.10489 [cs, stat]",
 		"source": "arXiv.org",
