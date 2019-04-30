@@ -1,5 +1,38 @@
 [
 	{
+		"type": "paper-conference",
+		"title": "Active Embedding Search via Noisy Paired Comparisons",
+		"container-title": "Proc. Int. Conf. on Machine Learning (ICML)",
+		"event-place": "Long Beach, CA",
+		"abstract": "Suppose that we wish to estimate a user’s preference vector w from paired comparisons of the form “does user w prefer item p or item q?,” where both the user and items are embedded in a low-dimensional Euclidean space with distances that reflect user and item similarities. Such observations arise in numerous settings, including psychometrics and psychology experiments, search tasks, advertising, and recommender systems. In such tasks, queries can be extremely costly and subject to varying levels of response noise; thus, we aim to actively choose pairs that are most informative given the results of previous comparisons. We provide new theoretical insights into the benefits and challenges of greedy information maximization in this setting, and develop two novel heuristics that maximize lower bounds on information gain and are simpler to analyze and compute respectively. We use simulated responses from a real-world dataset to validate our heuristics through their similar performance to greedy information maximization, and their superior preference estimation over state-of-the-art selection methods as well as random queries.",
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					6
+				]
+			]
+		},
+		"author": [
+			{
+				"family": "Canal",
+				"given": "Gregory"
+			},
+			{
+				"family": "Massimino",
+				"given": "Andrew K."
+			},
+			{
+				"family": "Davenport",
+				"given": "Mark A."
+			},
+			{
+				"family": "Rozell",
+				"given": "Christopher"
+			}
+		]
+	},
+	{
 		"id": "http://zotero.org/users/1998167/items/SKICY7FP",
 		"type": "thesis",
 		"title": "Learning to adapt under practical sensing constraints",
@@ -18,7 +51,7 @@
 			"date-parts": [
 				[
 					"2018",
-					11
+					12
 				]
 			]
 		}
