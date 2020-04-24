@@ -14,7 +14,7 @@ external:
 
 # cvurl: '/cv'
 
-copyyear: '2017&#x2012;2019'
+copyyear: '2017&#x2012;2020'
 
 plugins:
   - jekyll-redirect-from
