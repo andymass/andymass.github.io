@@ -4,8 +4,12 @@ title: contact
 
 ## Email
 
-  - `massimino (at) gatech (dot) edu`
-  - `web@normed.space`
+  - `web (at) massimino (dot) dev`
+  - `web (at) normed (dot) space`
+
+## Github
+
+[@andymass](https://github.com/andymass/).
 
 ## Secure
 
