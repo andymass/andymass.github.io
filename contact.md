@@ -13,8 +13,6 @@ title: contact
 
 ## Secure
 
-I'm [mass][1] on keybase.io.
-
 PGP public key:
 [A88B DB37 573A C005 766A 9251 C80E 3435 F58A 5B36][2]
 

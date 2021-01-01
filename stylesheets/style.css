@@ -20,10 +20,14 @@
 /* @import url('font-awesome.min.css'); */
 
 .bg-super-white { background: #f9f9f9; }
-.bg-not-white { background: #f8fafc; }
+.bg-not-white { background: #f7f7f7; }
 .top-50 { top: 50% }
 .pointers { pointer-events: auto; }
 .no-pointers { pointer-events: none; }
+
+.gray-body {
+  color: #474747;
+}
 
 .crimson { font-family: 'crimson text', serif; }
 
@@ -32,7 +36,12 @@
   text-rendering: optimizeLegibility;
 }
 
-.sans-serif { font-family: 'open sans',
+.titlfnt {
+  font-family: 'Consolas', monospace;
+  text-rendering: optimizeLegibility;
+}
+
+.sans-serif { font-family: 'Consolas', monospace,
   -apple-system, BlinkMacSystemFont, avenir next, avenir,
   helvetica neue, helvetica, ubuntu, roboto, noto, segoe
   ui, arial, sans-serif; }
