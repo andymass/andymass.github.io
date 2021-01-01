@@ -2,7 +2,7 @@
 landing: true
 ---
 
-I'm an associate at [Goldman Sachs][4], working in Machine Learning.
+I'm an associate at [Goldman Sachs][5], working in Machine Learning.
 
 ---
 
