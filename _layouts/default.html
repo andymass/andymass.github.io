@@ -20,13 +20,13 @@
         <a class="link dim dark-gray b f6 f5-ns dib mr3" href="{{ site.baseurl }}/" title="home">
           Andy Massimino
         </a>
-        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white" href="{{ site.baseurl }}/contact" title="contact">
+        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white pb0 bb bw2 b--white {% if page.url contains "contact" %}b--washed-green{% endif %}" href="{{ site.baseurl }}/contact" title="contact">
           contact
         </a>
-        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white" href="{{ site.baseurl }}/papers" title="papers">
+        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white pb0 bb bw2 b--white {% if page.url contains "papers" %}b--washed-green{% endif %}" href="{{ site.baseurl }}/papers" title="papers">
           papers
         </a>
-        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white" href="{{ site.baseurl }}/code" title="code">
+        <a class="link dim gray f6 f5-ns dib mr3 pa1 bg-white pb0 bb bw2 b--white {% if page.url contains "code" %}b--washed-green{% endif %}" href="{{ site.baseurl }}/code" title="code">
           code
         </a>
         {% if site.cvurl or site.posts.size > 0 %}

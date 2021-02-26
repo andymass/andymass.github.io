@@ -29,6 +29,10 @@
   color: #474747;
 }
 
+::selection {
+  background: #e8fdf5;
+}
+
 .crimson { font-family: 'crimson text', serif; }
 
 .ebgara {
