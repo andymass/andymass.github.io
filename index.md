@@ -2,7 +2,7 @@
 landing: true
 ---
 
-I'm an associate at [Goldman Sachs][5], working in Machine Learning.
+ml, data, software
 
 ---
 
@@ -31,4 +31,3 @@ where I received the Bachelor of Engineering degree.
 [2]: https://www.gatech.edu
 [3]: https://mdav.ece.gatech.edu
 [4]: https://cooper.edu
-[5]: https://www.goldmansachs.com
